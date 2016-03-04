@@ -1,0 +1,266 @@
+/*
+	CSS Reset
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle;}
+/*Background color*/
+
+
+/*
+	Config Default
+*/
+
+html,body {
+	background:#e3efef;
+	font-family:'Lato', sans-serif;
+}
+
+#lineGradient{
+	display:block;
+	height:5px;
+	background: rgba(165,206,83,1);
+	background: -moz-linear-gradient(left, rgba(165,206,83,1) 0%, rgba(165,206,83,1) 35%, rgba(86,136,147,1) 35%, rgba(86,136,147,1) 67%, rgba(114,184,200,1) 67%, rgba(114,184,200,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(165,206,83,1)), color-stop(35%, rgba(165,206,83,1)), color-stop(35%, rgba(86,136,147,1)), color-stop(67%, rgba(86,136,147,1)), color-stop(67%, rgba(114,184,200,1)), color-stop(100%, rgba(114,184,200,1)));
+	background: -webkit-linear-gradient(left, rgba(165,206,83,1) 0%, rgba(165,206,83,1) 35%, rgba(86,136,147,1) 35%, rgba(86,136,147,1) 67%, rgba(114,184,200,1) 67%, rgba(114,184,200,1) 100%);
+	background: -o-linear-gradient(left, rgba(165,206,83,1) 0%, rgba(165,206,83,1) 35%, rgba(86,136,147,1) 35%, rgba(86,136,147,1) 67%, rgba(114,184,200,1) 67%, rgba(114,184,200,1) 100%);
+	background: -ms-linear-gradient(left, rgba(165,206,83,1) 0%, rgba(165,206,83,1) 35%, rgba(86,136,147,1) 35%, rgba(86,136,147,1) 67%, rgba(114,184,200,1) 67%, rgba(114,184,200,1) 100%);
+	background: linear-gradient(to right, rgba(165,206,83,1) 0%, rgba(165,206,83,1) 35%, rgba(86,136,147,1) 35%, rgba(86,136,147,1) 67%, rgba(114,184,200,1) 67%, rgba(114,184,200,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5ce53', endColorstr='#72b8c8', GradientType=1 );
+}
+
+.wrapper{
+	box-sizing:border-box;
+	display:block;
+	max-width:1855px;
+	width:100%;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+
+/*
+	Página Inicial / Vitrine de Produtos
+*/
+header {margin:0 0 100px 0;}
+
+header h1,
+header h1 a {display:inline-block;}
+
+header h1 a{
+	width:320px;
+	height:95px;
+	background:url('../img/main-logo.png')no-repeat center center;
+	color:transparent;
+}
+
+header nav {
+	float:right;
+	font-family:'Montserrat', sans-serif;
+	margin:30px 0 0;
+	text-transform:uppercase;
+
+}
+
+header #mainMenu li{
+	display:inline-block;
+	float:left;
+	margin: 0 0 0 50px;
+
+}
+
+header li a {
+	color: #71a2ad;
+    font-size: 18px;
+    padding: 0 0 15px 0;
+    text-decoration: none;
+    transition: color 0.7s;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+
+header li a:hover {
+	color:#568893;
+	border-bottom: 2px solid #568893;
+}
+
+/*
+	Seção do Sub-menu (filtros)
+*/
+section.subMenu{
+	display:inline-block;
+	margin:0 50px 0 0;
+	width: 266px;
+	float:left;
+}
+
+section.subMenu button {
+	display: block;
+	width: 100%;
+	border: 3px solid #fff;
+	color: #5a696c;
+	background: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+	margin: 0 0 13px 0;
+	padding: 5px 0;
+	cursor:pointer;
+}
+
+section.subMenu button:hover {
+	background:#fff;
+}
+
+form.filters{
+	margin: 50px 0px 0px;
+}
+
+form.filters label {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px 0 13px 15px;
+	color: #5a696c;
+	background: #fff;
+	font-size: 22px;
+	font-weight: 100;
+}
+
+form.filters #price{
+	width: 100%;
+	margin: 10px 0 50px 0;
+}
+
+/*
+	Seção do Sub-menu (filtros)
+*/
+section.products{
+	box-sizing:border-box;
+	display:inline-block;
+	max-width: 1260px;
+	width: 75%;
+	float: right;
+}
+
+section.products ul{
+	list-style:none;
+}
+
+section.products li{
+	box-sizing: border-box;
+    padding: 0 0 50px 50px;
+    margin: 0 0 0 15px;
+    width: 300px;
+    float: left;
+}
+
+section.products a{
+	text-decoration: none;
+	color: #768386;
+}
+
+section.products li .hover {
+	opacity: 0;
+	background: url('../img/product-hover.png')repeat-x;
+	transition: opacity 0.65s;
+	width: 250px;
+	display: inline-block;
+	position: absolute;
+	text-align:center;
+	color: #fff;
+	font-weight: 200;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 64px 0;
+}
+
+section.products li .hover img{
+	display:block;
+	margin:0 auto 5px auto;
+}
+
+section.products li:hover .hover{
+	opacity:1;
+}
+
+section.products .product-img{
+    width: 100%;
+    height: 180px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    display: inline-block;
+    background-position: center !important;
+    margin: 0 0 10px 0;
+}
+
+section.products .product-name{
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+    color: #568893;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    padding: 0 0 5px 0;
+}
+
+section.products li:hover .product-name{
+	border-bottom: 2px solid;
+}
+
+section.products .price {
+    font-family: 'Lato', sans-serif;
+    color: #94ba4c;
+    margin: 10px 0 5px 0;
+    font-size: 14px;
+}
+
+section.products p{
+	font-weight: 200;
+	letter-spacing: 1px;
+	line-height:21px;
+	transition:color 0.75s;
+}
+
+section.products li:hover p{
+	color: #2F5058;
+}
+
+/*
+	Definir imagem dos produtos na vitrine dinamicamente...
+*/
+section.products #prod_01 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_02 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_03 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_04 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_05 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_06 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_07 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_08 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_09 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_10 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_11 {background:url('../img/product-lollapalooza.png');}
+section.products #prod_12 {background:url('../img/product-lollapalooza.png');}
+
+
+
+
+
+
+
+
+
+
+
+
+
