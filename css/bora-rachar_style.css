@@ -149,7 +149,7 @@ section.products{
 	box-sizing:border-box;
 	display:inline-block;
 	max-width: 1260px;
-	width: 75%;
+	position:absolute;
 	float: right;
 }
 
@@ -159,10 +159,9 @@ section.products ul{
 
 section.products li{
 	box-sizing: border-box;
-    padding: 0 0 50px 50px;
-    margin: 0 0 0 15px;
-    width: 300px;
-    float: left;
+	margin: 0 50px 50px 10px;
+	width: 250px;
+	float: right;
 }
 
 section.products a{

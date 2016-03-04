@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Bora Rachar</title>
 	<link rel="stylesheet" href="css/bora-rachar_style.css">
-	<script src="js/bora-rachar_scripts.js"></script>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/bora-rachar_scripts.js"></script>
 </head>
 <body>
 	<span id="lineGradient"></span>
@@ -29,8 +29,8 @@
 			<button>Categoria 2</button>
 			<button>Categoria 3</button>
 			<form class="filters">
-				<label for="price">Valor :<span></span></label>
-				<input type="range" name="price" id="price" min="100" max="10000" step="10">
+				<label for="price">Valor :<input id="value" value=""></input></label>
+				<input type="range" name="price" id="price" min="100" max="10000" step="10" onchange="updateTextInput(this.value)">
 
 				<label for="state">Estado</label>
 				<ol id="stateList"></ol>

@@ -15,8 +15,15 @@ $(document).ready(function() {
     s.parentNode.insertBefore(wf, s);
   })();
 
-(function getFilterValue () {
-   // body...  
-})
+
+  
+    function updateTextInput(val) {
+      document.getElementById('value').value = val; 
+    }
+
+       
+
+
+
 
 });
