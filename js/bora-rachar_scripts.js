@@ -1,3 +1,7 @@
+function updateTextInput(val) {
+  document.getElementById('value').value = val; 
+}
+
 $(document).ready(function() {
   //Google API da fonte 'Lato'e 'Montserrat':
   WebFontConfig = {
@@ -16,10 +20,11 @@ $(document).ready(function() {
   })();
 
 
-  
-    function updateTextInput(val) {
-      document.getElementById('value').value = val; 
-    }
+$.getJSON( 'brazil-cities-states.json', function( data ) {
+
+  console.log(data.estados[0].nome);
+
+});
 
        
 

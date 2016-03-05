@@ -142,15 +142,26 @@ form.filters #price{
 	margin: 10px 0 50px 0;
 }
 
+form.filters input#value {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 19px;
+    width: 100px;
+    color: #A4CE53;
+    border: 0;
+    margin: 0 0 0 30px;
+    position: absolute;
+}
+
 /*
 	Seção do Sub-menu (filtros)
 */
 section.products{
 	box-sizing:border-box;
 	display:inline-block;
-	max-width: 1260px;
+	max-width: 70%;
+	width:100%;
 	position:absolute;
-	float: right;
+	right:0;
 }
 
 section.products ul{
@@ -225,7 +236,7 @@ section.products .price {
 }
 
 section.products p{
-	font-weight: 200;
+	font-weight: 300;
 	letter-spacing: 1px;
 	line-height:21px;
 	transition:color 0.75s;
@@ -250,6 +261,35 @@ section.products #prod_09 {background:url('../img/product-lollapalooza.png');}
 section.products #prod_10 {background:url('../img/product-lollapalooza.png');}
 section.products #prod_11 {background:url('../img/product-lollapalooza.png');}
 section.products #prod_12 {background:url('../img/product-lollapalooza.png');}
+
+
+
+
+@media screen and (max-width: 1328px){
+	section.products li{
+		margin: 0 50px 50px 0;
+	}
+}
+
+@media screen and (max-width: 1285px){
+	section.products li{
+		width:240px;
+	}
+}
+
+@media screen and (max-width: 1242px){
+	section.products li{
+		width:230px;
+	}
+}
+
+
+
+
+
+
+
+
 
 
 
