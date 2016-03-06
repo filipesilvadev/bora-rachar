@@ -53,46 +53,48 @@ html,body {
 /*
 	Página Inicial / Vitrine de Produtos
 */
-header {margin:0 0 100px 0;}
+header {
+	margin:0 0 50px 0;
+	padding: 50px 0;
+	text-align:center;
+	background:url('../img/header-bg.jpg')no-repeat 0 0 / cover;
+}
 
 header h1,
 header h1 a {display:inline-block;}
 
 header h1 a{
-	width:320px;
-	height:95px;
-	background:url('../img/main-logo.png')no-repeat center center;
+	width:350px;
+	height:103px;
+	background:url('../img/main-logo.png')no-repeat center center / contain;
 	color:transparent;
+	margin:20px 0 0 0;
 }
 
 header nav {
-	float:right;
 	font-family:'Montserrat', sans-serif;
-	margin:30px 0 0;
+	margin:100px 0 0;
 	text-transform:uppercase;
 
 }
 
 header #mainMenu li{
 	display:inline-block;
-	float:left;
 	margin: 0 0 0 50px;
 
 }
 
 header li a {
-	color: #71a2ad;
-    font-size: 18px;
+	color: #fff;
+    font-size: 20px;
     padding: 0 0 15px 0;
     text-decoration: none;
-    transition: color 0.7s;
-    letter-spacing: 5px;
-    font-weight: 200;
+    letter-spacing: 7px;
+    font-weight: 100;
 }
 
 header li a:hover {
-	color:#568893;
-	border-bottom: 2px solid #568893;
+	border-bottom: 5px solid rgba(255, 255, 255, 0.15);
 }
 
 /*
@@ -115,7 +117,7 @@ section.subMenu button {
 	font-size: 22px;
 	font-weight: 100;
 	margin: 0 0 13px 0;
-	padding: 5px 0;
+	padding: 10px 0;
 	cursor:pointer;
 }
 
@@ -127,10 +129,11 @@ form.filters{
 	margin: 50px 0px 0px;
 }
 
-form.filters label {
+form.filters .formHead {
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	padding: 10px 0 13px 15px;
+	margin:25px 0 0 0;
 	color: #5a696c;
 	background: #fff;
 	font-size: 22px;
@@ -152,6 +155,43 @@ form.filters input#value {
     position: absolute;
 }
 
+form.filters ol {
+	padding: 28px 0;
+    font-weight: 300;
+    height:300px;
+    overflow:scroll;
+}
+
+form.filters ol label{
+	font-size: 21px;
+	line-height: 25px;
+	text-transform:capitalize;
+}
+
+form.filters ol input{
+	margin: 5px 5px 10px 0;
+}
+
+form.filters .shadow{
+	position: absolute;
+	width: 266px;
+    height: 40px;
+    display: inline-block;
+}
+
+form.filters .shadow.up{
+	background:url('../img/list-shadow_up.png')repeat-x;
+    margin: -28px 0 0 0;
+}
+
+form.filters .shadow.down{
+	background:url('../img/list-shadow_down.png')repeat-x;
+    margin: 295px 0 0 0;
+}
+
+form.filters input[type=checkbox] label:before {
+    border-radius: 3px;
+}
 /*
 	Seção do Sub-menu (filtros)
 */
@@ -261,8 +301,6 @@ section.products #prod_09 {background:url('../img/product-lollapalooza.png');}
 section.products #prod_10 {background:url('../img/product-lollapalooza.png');}
 section.products #prod_11 {background:url('../img/product-lollapalooza.png');}
 section.products #prod_12 {background:url('../img/product-lollapalooza.png');}
-
-
 
 
 @media screen and (max-width: 1328px){

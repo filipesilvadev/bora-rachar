@@ -20,9 +20,35 @@ $(document).ready(function() {
   })();
 
 
-$.getJSON( 'brazil-cities-states.json', function( data ) {
+$.getJSON( 'js/brazil-cities-states.json', function(data) {
+  var listStates = $('#stateList'),
+      listCities = $('#cityList'),
+      states = data.estados;
 
-  console.log(data.estados[0].nome);
+  for (var i = 0; i < states.length; i++) {
+    var state = states[i].nome.toLowerCase();
+    listStates.append('<input type="checkbox" name="'+state+'">'+
+                      '<label for="'+state+'">'+state+'</label><br>');
+  }
+  var stateInputs = $('#stateList input');
+  
+
+
+
+  stateInputs.click(function() {
+    var currentStateInput = this,
+        idexOfState = $.inArray(currentStateInput, stateInputs),
+        cityOfCurrentState = states[idexOfState].cidades;
+
+        for (var i = 0; i < cityOfCurrentState.length; i++) {
+          var city = cityOfCurrentState[i];
+          listCities.append('<input type="checkbox"><label>'+city+'</label><br>');
+        }
+
+        
+
+  });
+
 
 });
 

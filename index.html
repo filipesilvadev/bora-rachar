@@ -10,7 +10,6 @@
 </head>
 <body>
 	<span id="lineGradient"></span>
-	<div class="wrapper">
 		<header>
 			<h1>
 				<a href="index.html" target="_self">Bora Rachar</a>
@@ -24,19 +23,26 @@
 				</ul>
 			</nav>
 		</header>
+	<div class="wrapper">
 		<section class="subMenu">
 			<button>Categoria 1</button>
 			<button>Categoria 2</button>
 			<button>Categoria 3</button>
 			<form class="filters">
-				<label for="price">Valor :<input id="value" value=""></input></label>
+				<label for="price" class="formHead">Valor :<input id="value" value=""></input></label>
 				<input type="range" name="price" id="price" min="100" max="10000" step="10" onchange="updateTextInput(this.value)">
 
-				<label for="state">Estado</label>
-				<ol id="stateList"></ol>
+				<label class="formHead">Estado</label>
+				<ol id="stateList">
+					<span class="shadow up"></span>
+					<span class="shadow down"></span>
+				</ol>
 
-				<label for="city">Cidade</label>
-				<ol id="cityList"></ol>
+				<label class="formHead">Cidade</label>
+				<ol id="cityList">
+					<span class="shadow up"></span>
+					<span class="shadow down"></span>
+				</ol>
 
 			</form>
 		</section>
