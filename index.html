@@ -25,9 +25,45 @@
 		</header>
 	<div class="wrapper">
 		<section class="subMenu">
-			<button>Categoria 1</button>
-			<button>Categoria 2</button>
-			<button>Categoria 3</button>
+			<div class="category closed">
+				<h6>Categoria 1</h6>
+				<ul class="subcat">
+					<li><a href="#">Lorem</a></li>
+					<li><a href="#">Ipsum</a></li>
+					<li><a href="#">Dolor</a></li>
+					<li><a href="#">Amet</a></li>
+					<li><a href="#">Random</a></li>
+					<li><a href="#">Text</a></li>
+					<li><a href="#">Example</a></li>
+				</ul>
+			</div>
+
+			<div class="category closed">
+				<h6>Categoria 2</h6>
+				<ul class="subcat">
+					<li><a href="#">Lorem</a></li>
+					<li><a href="#">Ipsum</a></li>
+					<li><a href="#">Dolor</a></li>
+					<li><a href="#">Amet</a></li>
+					<li><a href="#">Random</a></li>
+					<li><a href="#">Text</a></li>
+					<li><a href="#">Example</a></li>
+				</ul>
+			</div>
+
+			<div class="category closed">
+				<h6>Categoria 3</h6>
+				<ul class="subcat">
+					<li>Lorem</li>
+					<li>Ipsum</li>
+					<li>Dolor</li>
+					<li>Amet</li>
+					<li>Random</li>
+					<li>Text</li>
+					<li>Example</li>
+				</ul>
+			</div>
+
 			<form class="filters">
 				<label for="price" class="formHead">Valor :<input id="value" value=""></input></label>
 				<input type="range" name="price" id="price" min="100" max="10000" step="10" onchange="updateTextInput(this.value)">

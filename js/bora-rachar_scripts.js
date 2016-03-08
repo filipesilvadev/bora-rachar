@@ -19,42 +19,49 @@ $(document).ready(function() {
     s.parentNode.insertBefore(wf, s);
   })();
 
+  (function categoryFilters () {
+    var categoryBtns  = $('.category h6');
 
-$.getJSON( 'js/brazil-cities-states.json', function(data) {
-  var listStates = $('#stateList'),
-      listCities = $('#cityList'),
-      states = data.estados;
+        categoryBtns.click(function() {
+          var category = $(this).parents('.category'),
+              categoryClosed = category.hasClass('closed'),
+              categoryOpen = category.hasClass('open');
 
-  for (var i = 0; i < states.length; i++) {
-    var state = states[i].nome.toLowerCase();
-    listStates.append('<input type="checkbox" name="'+state+'">'+
-                      '<label for="'+state+'">'+state+'</label><br>');
-  }
+          if (categoryClosed) {
+              category.find('ul').css('display', 'block');
+              category.removeClass('closed');
+              category.addClass('open');
+          }else if (categoryOpen) {
+              category.find('ul').css('display', 'none');
+              category.removeClass('open');
+              category.addClass('closed');
+          }
+
+        });
+  })();
+
+  $.getJSON( 'js/brazil-cities-states.json', function(data) {
+    var listStates = $('#stateList'),
+        listCities = $('#cityList'),
+        states = data.estados;
+
+    for (var i = 0; i < states.length; i++) {
+      var state = states[i].nome.toLowerCase();
+      listStates.append('<input type="checkbox" name="'+state+'">'+
+                        '<label for="'+state+'">'+state+'</label><br>');
+    }
+  
   var stateInputs = $('#stateList input');
   
-
-
-
-  stateInputs.click(function() {
-    var currentStateInput = this,
-        idexOfState = $.inArray(currentStateInput, stateInputs),
-        cityOfCurrentState = states[idexOfState].cidades;
+    stateInputs.click(function() {
+      var currentStateInput = this,
+          idexOfState = $.inArray(currentStateInput, stateInputs),
+          cityOfCurrentState = states[idexOfState].cidades;
 
         for (var i = 0; i < cityOfCurrentState.length; i++) {
           var city = cityOfCurrentState[i];
           listCities.append('<input type="checkbox"><label>'+city+'</label><br>');
         }
-
-        
-
+    });
   });
-
-
-});
-
-       
-
-
-
-
 });

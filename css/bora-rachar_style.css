@@ -15,13 +15,10 @@ abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle;}
-/*Background color*/
-
 
 /*
 	Config Default
 */
-
 html,body {
 	background:#e3efef;
 	font-family:'Lato', sans-serif;
@@ -107,22 +104,56 @@ section.subMenu{
 	float:left;
 }
 
-section.subMenu button {
+section.subMenu .category {
 	display: block;
 	width: 100%;
 	border: 3px solid #fff;
 	color: #5a696c;
 	background: transparent;
+	margin: 0 0 13px 0;
+	padding: 10px 0;
+}
+
+section.subMenu .category h6{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 22px;
 	font-weight: 100;
-	margin: 0 0 13px 0;
-	padding: 10px 0;
+	text-align:center;
 	cursor:pointer;
 }
 
-section.subMenu button:hover {
+section.subMenu .category .subcat{
+	list-style:none;
+	width:200px;
+	margin: 15px auto 0 auto;
+}
+
+section.subMenu .category li{
+	border-top: 1px solid #ccd5da;
+	padding: 5px 10px;
+}
+
+section.subMenu .category li:hover{
+	background:#E3EFEF;
+	cursor:pointer;
+}
+
+section.subMenu .category a{
+	text-decoration:none;
+	color:inherit;
+	font-size:14px;
+	letter-spacing:1px;
+
+}
+
+
+
+section.subMenu .category:hover {
 	background:#fff;
+}
+
+section.subMenu .subcat {
+	display:none;
 }
 
 form.filters{
@@ -139,6 +170,8 @@ form.filters .formHead {
 	font-size: 22px;
 	font-weight: 100;
 }
+
+
 
 form.filters #price{
 	width: 100%;
@@ -302,6 +335,32 @@ section.products #prod_10 {background:url('../img/product-lollapalooza.png');}
 section.products #prod_11 {background:url('../img/product-lollapalooza.png');}
 section.products #prod_12 {background:url('../img/product-lollapalooza.png');}
 
+/*
+	Página interna de produto
+*/
+section.product img {
+    width: 400px;
+    margin: 0 2% 0 0;
+}
+
+section.product .description {
+	width: 50%;
+	display: inline-block;
+}
+
+section.product .description h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #568893;
+    letter-spacing: 1px;
+}
+
+section.product .description .price {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #94ba4c;
+}
 
 @media screen and (max-width: 1328px){
 	section.products li{
