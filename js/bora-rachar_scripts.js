@@ -64,4 +64,32 @@ $(document).ready(function() {
         }
     });
   });
+
+
+  (function toogleMenu () {
+
+    var menuToogle = $('.toogleMenu');
+
+    menuToogle.click(function() {
+
+
+      var menuClosed = $('.toogleMenu').hasClass('closed'),
+          menuOpen = $('.toogleMenu').hasClass('open');
+      
+      if (menuClosed) {
+        menuToogle.removeClass('closed');
+        menuToogle.addClass('open');
+        $('.subMenu').css('display', 'inline-block');
+      }else if(menuOpen){
+        menuToogle.removeClass('open');
+        menuToogle.addClass('closed');
+        $('.subMenu').css('display', 'none');
+      }
+    });
+
+
+    
+       
+  })();
+
 });
