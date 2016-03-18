@@ -669,7 +669,7 @@ section.product .contributors-list pre {
 
 @media screen and (max-width: 954px){
 	section.subMenu {
-		height:768px;
+		height:350px;
 		border-radius: 20px 0px 0px 20px;
 		-moz-border-radius: 20px 0px 0px 20px;
 		-webkit-border-radius: 20px 0px 0px 20px;
@@ -790,6 +790,11 @@ section.product .contributors-list pre {
 }
 
 
+@media screen and (max-width: 720px){
+
+
+}
+
 
 @media screen and (max-width: 714px){
 
@@ -807,29 +812,6 @@ section.product .contributors-list pre {
 	}
 }
 
-
-@media screen and (max-width: 614px){
-
-	header li a{
-		padding: 2px 10px 4px 15px;
-		border-bottom: 0;
-	}
-
-	header li a:hover{
-		border-bottom: 0;
-		background: RGBA(0, 0, 0, 0.7);
-	}
-
-}
-
-
-@media screen and (max-width: 610px){
-	section.product .contributors-list span {
-		float:none;
-	}
-}
-
-
 @media screen and (max-width: 684px){
 
 	section.products li {
@@ -846,6 +828,38 @@ section.product .contributors-list pre {
 	}
 }
 
+@media screen and (max-width: 614px){
+
+	header li a{
+		padding: 2px 10px 4px 15px;
+		border-bottom: 0;
+	}
+
+	header li a:hover{
+		border-bottom: 0;
+		background: rgba(0, 0, 0, 0.7);
+	}
+
+}
+
+
+@media screen and (max-width: 610px){
+	section.product .contributors-list span {
+		float:none;
+	}
+}
+
+@media screen and (max-width: 601px){
+
+	header #mainMenu li{
+		margin: 0 15px 10px 15px;
+	}
+
+}
+
+
+
+
 
 @media screen and (max-width: 640px){
 
@@ -856,6 +870,32 @@ section.product .contributors-list pre {
 
 	section.products li .hover{
 		width:99%;
+	}
+}
+
+
+@media screen and (max-width: 614px){
+
+	header nav{
+		margin: 65px 0 0;
+	}
+
+	header #mainMenu li{
+		display:block;
+		margin: 0 25px 20px 25px;
+	}
+
+	header li a{
+		font-size: 30px;
+	}
+
+	section.product .contributors-list pre {
+	    background: url('../img/contribuition.png')no-repeat 172px 5px;
+	    padding: 15px 0 30px 200px;
+	}
+
+	section.product .contributors-list span{
+		float:none;
 	}
 }
 
@@ -926,6 +966,22 @@ section.product .contributors-list pre {
 	section.product .contributors-list pre{
 		padding: 15px 0 30px 40px;
 		background: url('../img/contribuition.png')no-repeat 15px 5px;
+	}
+}
+
+@media screen and (max-width: 360px){
+
+	header #mainMenu li {
+	    display: block;
+	    margin: 0 25px 20px 25px;
+	}
+
+	header li a{
+		font-size:30px;
+	}
+
+	section.product .description button{
+		margin: 20px 0px 0px 10px;
 	}
 }
 
